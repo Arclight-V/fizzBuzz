@@ -21,12 +21,13 @@ Step 3. Launching the application.
 cd .. && cd FizzBuzz && mvn package && mvn exec:java
 ```
 
-if errors are received: 
+if errors are received:
+```
 [ERROR] Error executing Maven.
 [ERROR] java.lang.IllegalStateException: Unable to load cache item
 [ERROR] Caused by: Unable to load cache item
 [ERROR] Caused by: Could not initialize class com.google.inject.internal.cglib.core.$MethodWrapper
-
+```
 decision:
 
 [link1](https://github.com/nroduit/Weasis/issues/201)
