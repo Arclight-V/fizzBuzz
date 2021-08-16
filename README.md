@@ -42,3 +42,9 @@ Step 4. Сreating a numbers and topic.
 cd .. && bash numbersGenerate.sh && cd Kafka && docker-compose exec kafka kafka-topics.sh --create --topic numbers --bootstrap-server localhost:9092 &&
 cat ../numbers.txt | docker-compose exec -T kafka kafka-console-producer.sh --topic numbers --bootstrap-server localhost:9092
 ```
+
+### delete all images
+
+```
+ docker-compose down -v --rmi all --remove-orphans 
+```
