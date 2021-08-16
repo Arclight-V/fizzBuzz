@@ -75,7 +75,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>controller.SimpleKafkaExampleApplication</mainClass>
+                    <mainClass>app.Application</mainClass>
                 </configuration>
             </plugin>
             <plugin>
