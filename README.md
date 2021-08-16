@@ -46,5 +46,5 @@ cat ../numbers.txt | docker-compose exec -T kafka kafka-console-producer.sh --to
 ### delete all images
 
 ```
- docker-compose down -v --rmi all --remove-orphans 
+docker-compose down -v --rmi all --remove-orphans 
 ```
