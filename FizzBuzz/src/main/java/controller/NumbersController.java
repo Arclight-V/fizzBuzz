@@ -14,6 +14,6 @@ public class NumbersController {
 
     @PostMapping
     public void sendOrder(String msgId, String msg){
-        kafkaTemplate.send("msg", msgId, msg);
+        kafkaTemplate.send("numbers", msgId, msg);
     }
 }

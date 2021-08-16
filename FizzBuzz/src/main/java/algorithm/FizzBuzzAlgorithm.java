@@ -1,5 +1,8 @@
 package algorithm;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class FizzBuzzAlgorithm implements Algorithm {
@@ -42,7 +45,30 @@ public class FizzBuzzAlgorithm implements Algorithm {
     }
 
     @Override
-    public void printingAllToFile() {
-
+    public void printingAllToFile() throws IOException {
+        File file = new File("ResultAlgorithmFizzBuzz.txt");
+        file.createNewFile();
+        FileWriter writer = new FileWriter(file);
+        int number;
+        while(sc.hasNextInt()) {
+            number = sc.nextInt();
+            numberIs enumnumber = applyAlgorithm(number);
+            if (enumnumber == numberIs.FIZZBUZZ) {
+                writer.write("fizzbuzz\n");
+                writer.flush();
+            } else if (enumnumber == numberIs.FIZZ) {
+                writer.write("fizz\n");
+                writer.flush();
+            } else if (enumnumber == numberIs.BUZZ) {
+                writer.write("buzz\n");
+                writer.flush();
+            } else {
+                writer.write(number);
+                writer.write('\n');
+                writer.flush();
+            }
+        }
+        writer.close();
+        
     }
 }

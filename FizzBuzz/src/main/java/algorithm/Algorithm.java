@@ -1,6 +1,8 @@
 package algorithm;
 
+import java.io.IOException;
+
 public interface Algorithm {
     void printAll();
-    void printingAllToFile();
+    void printingAllToFile() throws IOException;
 }
