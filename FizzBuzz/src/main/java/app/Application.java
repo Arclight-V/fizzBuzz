@@ -6,7 +6,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 
 @EnableKafka
 @SpringBootApplication
-public class FizzBuzzApplication {
+public class Application {
 
     @KafkaListener(topics = "numbers")
     public void NumbersListener(String numbers) {
