@@ -29,9 +29,9 @@ if errors are received:
 
 decision:
 @[link1](https://github.com/nroduit/Weasis/issues/201)
+
 @[link2](https://nroduit.github.io/en/getting-started/building-weasis/)
 or use Intellij IDEA.
-
 
 Step 4. Сreating a numbers and topic.
 
